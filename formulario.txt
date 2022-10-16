@@ -1,0 +1,6 @@
+1;Carlos;Silva;23;Masculino;4;Carro
+2;Maria;Castro;23;Feminino;4;Carro
+1;Carlos;Silva;23;Masculino;9;Moto
+3;Roberto;Pereira;41;Masculino;4;Carro
+2;Maria;Castro;23;Feminino;7;Trator
+1;Carlo;Silva;23;Masculino;7;Trator
