@@ -1,6 +1,6 @@
 # AgroPago
 
-##Sobre o Projeto
+## Sobre o Projeto
   O corrente projeto visa desenvolver um ciclo de cadastro, tendo como base os seguintes parâmetros: 
   <ul>
   <li>O ciclo de cadastro será inicializado através de um arquivo no formato txt denominado “formulario”. </li>
