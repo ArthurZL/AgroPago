@@ -15,7 +15,7 @@ if ($conn->connect_error) {
 // Create database
 $newdb = "CREATE DATABASE IF NOT EXISTS $dbname";
 if ($conn->query($newdb) === TRUE) {
-    echo "Database $dbname criada com sucesso -> ";
+    //echo "Database $dbname criada com sucesso -> ";
 } else {
     echo "Erro ao criar database: " . $conn->error;
 }
@@ -30,7 +30,7 @@ if ($conn->connect_error) {
 //Excluir tabela se ela já existir
 $drop = "DROP TABLE IF EXISTS $table";
 if ($conn->query($drop) === TRUE) {
-	echo "Tabela $table deletada -> ";
+	//echo "Tabela $table deletada -> ";
 }else{
 	echo "Erro ao excluir tabela: " . $conn->error;
 }
@@ -48,14 +48,12 @@ Produto VARCHAR(30),
 Data_Registro TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 )";
 if ($conn->query($sql) === TRUE) {
-	echo "Tabela Pessoas foi criada com sucesso -> ";
+	//echo "Tabela Pessoas foi criada com sucesso -> ";
 } else {
 	echo "Erro de criação de tabela: " . $conn->error;
 }
 
-//Tentativa de realizar inserts com explode, lendo de um txt, a qual possuia seus elementos separados por ponto e vírgula
-//ERRO: Conversão de Array para String de forma que pudesse ser feito os inserts no MySQL
-
+//Realizando leitura do formulário, seguindo dos inserts nas colunas
 $txt_file = fopen('formulario.txt','r');
 $array = array();
 while ($line = fgets($txt_file)) {
@@ -77,7 +75,7 @@ if(is_array($array)){
         $query ="INSERT INTO $table (Id_Pessoa, Nome, Sobrenome, Idade, Genero, ID_Produto, Produto)
 			VALUES ( '".$val0."','".$val1."','".$val2."','".$val3."','".$val4."','".$val5."','".$val6."' );";
 		if ($conn->query($query) === TRUE) {
-			echo "dados gravados ";
+			//echo "dados gravados ";
 		} else {
 			echo "Erro de gravação: " . $conn->error;
 		}
