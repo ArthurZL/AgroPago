@@ -5,22 +5,20 @@ $password = '';
 $dbname = 'cadastro';
 $table = 'pessoas_produto';
 
-// Criando conexão
+// Criando conexão sem o banco de dados
 $conn = new mysqli($servername, $username, $password);
 // Checando conexão
 if ($conn->connect_error) {
 	die("Falha na conexão: " . $conn->connect_error);
 }
 
-// Create database
+// criando banco de dados se ele ainda não existir
 $newdb = "CREATE DATABASE IF NOT EXISTS $dbname";
-if ($conn->query($newdb) === TRUE) {
-    //echo "Database $dbname criada com sucesso -> ";
-} else {
+if ($conn->query($newdb) === FALSE) {
     echo "Erro ao criar database: " . $conn->error;
 }
 
-// Criando conexão
+// Criando conexão com o banco de dados
 $conn = new mysqli($servername, $username, $password, $dbname);
 // Checando conexão
 if ($conn->connect_error) {
@@ -29,9 +27,7 @@ if ($conn->connect_error) {
 
 //Excluir tabela se ela já existir
 $drop = "DROP TABLE IF EXISTS $table";
-if ($conn->query($drop) === TRUE) {
-	//echo "Tabela $table deletada -> ";
-}else{
+if ($conn->query($drop) === FALSE) {
 	echo "Erro ao excluir tabela: " . $conn->error;
 }
 
@@ -43,17 +39,15 @@ Nome VARCHAR(30) NOT NULL,
 Sobrenome VARCHAR(30) NOT NULL,
 Idade int(11),
 Genero VARCHAR(10),
-ID_Produto INT(6) UNSIGNED,
+Id_Produto INT(6) UNSIGNED,
 Produto VARCHAR(30),
 Data_Registro TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 )";
-if ($conn->query($sql) === TRUE) {
-	//echo "Tabela Pessoas foi criada com sucesso -> ";
-} else {
+if ($conn->query($sql) === FALSE) {
 	echo "Erro de criação de tabela: " . $conn->error;
 }
 
-//Realizando leitura do formulário, seguindo dos inserts nas colunas
+//Realizando leitura do formulário
 $txt_file = fopen('formulario.txt','r');
 $array = array();
 while ($line = fgets($txt_file)) {
@@ -63,6 +57,7 @@ while ($line = fgets($txt_file)) {
 }
 fclose($txt_file);
 
+//Realizando inserts
 if(is_array($array)){
     foreach ($array as $row) {
         $val0 = mysqli_real_escape_string($conn, $row[0]);
@@ -74,9 +69,7 @@ if(is_array($array)){
 		$val6 = mysqli_real_escape_string($conn, $row[6]);
         $query ="INSERT INTO $table (Id_Pessoa, Nome, Sobrenome, Idade, Genero, ID_Produto, Produto)
 			VALUES ( '".$val0."','".$val1."','".$val2."','".$val3."','".$val4."','".$val5."','".$val6."' );";
-		if ($conn->query($query) === TRUE) {
-			//echo "dados gravados ";
-		} else {
+		if ($conn->query($query) === FALSE) {
 			echo "Erro de gravação: " . $conn->error;
 		}
     }

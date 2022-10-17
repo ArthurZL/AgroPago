@@ -1,6 +1,6 @@
 <html>
     <body>
-        <table>
+        <table border='1'>
             <tr>
                 <th>Id_Pessoa_Produto</th>
                 <th>Id_Pessoa</th>
@@ -23,9 +23,14 @@
             	die("Falha na conexão: " . $conn->connect_error);
             }
 
+            //Selecionando toda a tabela
             $sql_code = "SELECT * FROM $table";
-            $result = $conn->query($sql_code);
+            if ($conn->query($sql_code) === FALSE) {
+                echo "Erro de gravação: " . $conn->error;
+            }
 
+            //Formatando a tabela
+            $result = $conn->query($sql_code);
             if($result->num_rows > 0){
                 while($row = $result->fetch_assoc()){
 					echo "<tr>";
