@@ -28,7 +28,17 @@
 
             if($result->num_rows > 0){
                 while($row = $result->fetch_assoc()){
-                    echo "<tr><td>".$row['Id_Pessoa_Produto']."<tr><td>".$row['Id_Pessoa']."<tr><td>".$row['Nome']."<tr><td>".$row['Sobrenome']."<tr><td>".$row['Idade']."<tr><td>".$row['Genero']."<tr><td>".$row['ID_Produto']."<tr><td>".$row['Produto']."<tr><td>".$row['Data_Registro'];
+					echo "<tr>";
+                    echo "<td>".$row['Id_Pessoa_Produto']."</td>";
+					echo "<td>".$row['Id_Pessoa']."</td>";
+					echo "<td>".$row['Nome']."</td>";
+					echo "<td>".$row['Sobrenome']."</td>";
+					echo "<td>".$row['Idade']."</td>";
+					echo "<td>".$row['Genero']."</td>";
+					echo "<td>".$row['ID_Produto']."</td>";
+					echo "<td>".$row['Produto']."</td>";
+					echo "<td>".$row['Data_Registro']."</td>";
+					echo "</tr>";
                 }
             } else{
                 echo "Sem resultados";
