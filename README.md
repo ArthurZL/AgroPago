@@ -29,7 +29,7 @@ Para a realização da tarefa torna-se necessário realizar a instalação de al
 ## Considerações
 Visto que para o desenvolvimento deste projeto utilizou-se Wampserver, os arquivos presentes neste repositório estavam sendo armazenados no caminho “...\wamp64\www\AgroPago”. Com isso, torna-se possível acessar o banco através da URL “http://localhost/phpmyadmin”, onde por padrão o usuário é “root” e a senha vazia. <br />
 Com o acesso devidamente feito, pode-se rodar o arquivo “conexão.php” digitando na URL “http://localhost/AgroPago/conexao” para realizar a criação do banco de dados, criação da tabela e inserção dos dados. Após isto, para visualizar a tabela por completa, basta rodar o arquivo “index.php” digitando na URL “http://localhost/AgroPago/index”. <br />
-A tabela “pessoas_produto” por sua vez tem por objetivo simular uma tabela intermediária entre as tabelas fictícias “pessoas” e “produto”, normalmente estas tabelas conteriam apenas Ids, mas para fins de melhor visualização, foi adicionado a ela as descrições correspondentes de cada pessoa e produto.
+A respeito dos formulários, para que novas informações sejam acrescentadas em uma tabela, basca adicionar uma nova linha no formulário correspondente a tabela desejada, com os devidos dados separados por ponto e vírgula.
 
 ## Tabelas
 Todas as informações sensíveis, como nomes e endereços, presente neste repositório são meramente ilustrativos e não possuem quaisquer intenções de exposição explicita de dados. <br />
