@@ -1,0 +1,11 @@
+1;Carlos;Silva;23;M
+2;João;Castro;77;M
+3;Samanta;Gomes;36;F
+4;Carlos;Silva;41;M
+5;Maria;Pereira;49;F
+6;Amanda;Dutra;58;F
+7;Júlio;Fonseca;68;M
+8;Agatha;Gomes;58;F
+9;Samanta;Gomes;25;F
+10;Maria;Silva;36;F
+11;Carlos;Magalhães;52;M

@@ -1,0 +1,6 @@
+1;Rio Grande do Sul;RS
+2;Rio de Janeiro;RJ
+3;São Paulo;SP
+4;Minas Gerais;MG
+5;Bahia;BA
+6;Alagoas;AL

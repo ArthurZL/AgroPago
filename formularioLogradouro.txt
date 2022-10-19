@@ -1,0 +1,11 @@
+1;Benedito Bentes, rua José Antônio de Albuquerque 150;61;6
+2;Olavo Bilac, rua Prudêncio Luiz Ferreira 72, comp. 102;21;11
+3;Bosque, rua Barão de Anhumas 1002, comp. 107;32;7
+4;Laureano, rua Abayomi 840, comp. 113;21;2
+5;Montanhão, rua Esperança 174, comp. 206;33;1
+6;Capuchinhos, rua Borborema 166;52;4
+7;Queimadinha, rua Santana 85;52;9
+8;Farrapos, rua André Rossi 2256, comp. 102;11;8
+9;Belvedere, rua Dominicanos 202;41;3
+10;Mata do Rolo, rua Vila Rica 202, comp. 06;63;10
+11;Guarajuba, rua Canto do Mar 202, comp. 12;53;5

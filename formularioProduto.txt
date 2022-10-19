@@ -1,0 +1,9 @@
+1;Pulverizador;120J;400000;1
+2;Enfardadora;460M;700000;5
+3;Trator;7J;1100000;3
+4;Colheitadeira;S700;650000;2
+5;Subsolador;KV220;740000;4
+6;Segadeira;1070V;560000;2
+7;Empilhadeira;SS80;100000;3
+8;Perfurador;S300;1300000;4
+9;Plantadeira;J8;850000;2

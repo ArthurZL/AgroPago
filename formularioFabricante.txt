@@ -1,0 +1,5 @@
+1;AgroMore;Não
+2;Tratores Ferreira;Sim
+3;JJ Agronomia;Sim
+4;Pecuária P&Q;Sim
+5;Agronomy for All;Não

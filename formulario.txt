@@ -1,6 +1,0 @@
-1331;Carlos;Silva;23;Masculino;41;Pulverizadores PLA 120J
-1203;Maria;Castro;23;Feminino;41;Pulverizadores PLA 120J
-1331;Carlos;Silva;23;Masculino;95;Enfardadora 460M
-1003;Roberto;Pereira;41;Masculino;41;Pulverizadores PLA 120J
-1203;Maria;Castro;23;Feminino;77;Trator Série 7J
-911;Carlos;Silva;51;Masculino;77;Trator Série 7J
